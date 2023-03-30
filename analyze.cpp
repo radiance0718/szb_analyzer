@@ -284,7 +284,7 @@ void play_chaomuo(){
 }
 
 void play_silver(){
-    if(cnt_drop >= 2)draw_card(3);//银龙抽3
+    if(cnt_drop + (rand()&1) > 2)draw_card(3);//银龙抽3
 }
 
 void play_suishilong(){

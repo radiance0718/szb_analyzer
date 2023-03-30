@@ -392,7 +392,7 @@ int main(){
     prepare_deck();
    
 
-    int repeat = 1000000;
+    int repeat = 2000000;
     double num = repeat;
     while(repeat--){
         work();
@@ -402,9 +402,9 @@ int main(){
     printf("平均第%lf回合弃牌4次\n", drop_round/num);
     printf("平均第%lf回合抽到金龙\n", gold_round/num);
     printf("平均第%lf回合达到10pp\n", tenpp_round/num);
-    printf("平均第%lf回合在回合开始时同时达成两者\n", both_tenpp_gold/num);
+    printf("平均第%lf回合在回合开始时同时拿到金龙和10pp\n", both_tenpp_gold/num);
     printf("有%lf的几率在第6回合开始时有9pp和一张金龙\n", num_six_gold/num);
-    printf("有%lf的几率在第7回合开始时有至少一张金龙\n", num_gold/num);
+    printf("有%lf的几率在第7回合开始时有一张金龙\n", num_gold/num);
     printf("有%lf的几率在第7回合开始时有10pp\n", num_tenpp/num);
     printf("有%lf的几率在第7回合开始时有10pp和一张金龙\n", num_both/num);
     return 0;

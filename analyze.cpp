@@ -111,6 +111,7 @@ void pri(){
 }//调试用 打印手牌和对局信息
 
 void init_card(int id, int cost, int discard, int charge, int draw, int pri_normal, int pri_awake, int pri_discard, int num){
+    //前8个信息是初始化卡牌所需信息，最后一个是这张卡塞了多少张
     card c = card(id, cost, discard, charge, draw, pri_normal, pri_awake, pri_discard);
 
     for(int i = 1;i <= num;i++){

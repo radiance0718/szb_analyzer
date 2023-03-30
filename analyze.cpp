@@ -278,8 +278,7 @@ void play_qishi(){
 
 void play_chaomuo(){
     if(g.awake){
-        g.pp_re += 2;
-        draw_card(2);//恩泽（太tm超模了！）觉醒后抽2回2pp
+        draw_card(2);//恩泽（太tm超模了！）觉醒后抽2 谢谢8U提醒
     }
 }
 
